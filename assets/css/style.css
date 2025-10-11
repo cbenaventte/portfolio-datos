@@ -1,5 +1,61 @@
+  h1, h2, h3, h4, h5, h6 {
+        color: #1f2937 !important;
+    }
 
-   :root {
+    p {
+        color: #374151 !important;
+    }
+
+    .dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode h5, .dark-mode h6 {
+        color: #e0e7ff !important;
+    }
+
+    .dark-mode p {
+        color: #cbd5e1 !important;
+    }
+
+    .dark-mode .text-gray-700 {
+        color: #cbd5e1 !important;
+    }
+
+    .dark-mode .text-gray-600 {
+        color: #94a3b8 !important;
+    }
+
+    .dark-mode .glass-card {
+        background: rgba(15, 10, 31, 0.8) !important;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }        /* Smooth scrolling */
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* Modal styles */
+    #dashboardModal {
+        opacity: 1;
+        animation: fadeIn 0.3s ease-in-out;
+    }
+
+    #dashboardModal.hidden {
+        display: none;
+    }
+
+    @keyframes fadeInModal {
+        from {
+            opacity: 0;
+            transform: scale(0.95);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    #dashboardModal:not(.hidden) > div {
+        animation: fadeInModal 0.3s ease-in-out;
+    }
+  :root {
         --primary: #6366f1;
         --primary-dark: #4f46e5;
         --accent: #ec4899;
@@ -11,7 +67,6 @@
         --text-dark: #e0e7ff;
     }
 
-
     * {
         font-family: 'Poppins', sans-serif;
     }
@@ -22,13 +77,13 @@
 
     body {
         background: var(--bg-light);
-        color: var(--text-light);
+        color: #1f2937 !important;
         transition: all 0.3s ease;
     }
 
-    .dark-mode {
-        background: var(--bg-dark);
-        color: var(--text-dark);
+    body.dark-mode {
+        background: var(--bg-dark) !important;
+        color: var(--text-dark) !important;
     }
 
     /* Animaciones */
@@ -83,6 +138,12 @@
         border: 1px solid rgba(255, 255, 255, 0.1);
     }
 
+    .dark-mode .glass-card {
+        background: rgba(15, 10, 31, 0.8);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
     .project-card {
         animation: fadeInUp 0.6s ease-out forwards;
         opacity: 0;
@@ -103,7 +164,10 @@
         position: relative;
         overflow: hidden;
         background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
-        display: inline-block;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
         padding: 12px 24px;
         border-radius: 8px;
         color: white;
@@ -112,6 +176,8 @@
         transition: all 0.3s ease;
         border: none;
         cursor: pointer;
+        white-space: nowrap;
+        min-width: auto;
     }
 
     .btn-gradient::before {
@@ -125,6 +191,7 @@
         background: rgba(255, 255, 255, 0.3);
         transform: translate(-50%, -50%);
         transition: width 0.6s, height 0.6s;
+        z-index: -1;
     }
 
     .btn-gradient:hover {
@@ -139,18 +206,88 @@
 
     .btn-gradient-alt {
         background: linear-gradient(135deg, #ec4899 0%, #f43f5e 100%);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 12px 24px;
+        border-radius: 8px;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        border: none;
+        cursor: pointer;
+        white-space: nowrap;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .btn-gradient-alt::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.3);
+        transform: translate(-50%, -50%);
+        transition: width 0.6s, height 0.6s;
+        z-index: -1;
     }
 
     .btn-gradient-alt:hover {
+        transform: translateY(-2px);
         box-shadow: 0 10px 25px rgba(236, 72, 153, 0.4);
+    }
+
+    .btn-gradient-alt:hover::before {
+        width: 300px;
+        height: 300px;
     }
 
     .btn-gradient-secondary {
         background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 12px 24px;
+        border-radius: 8px;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        border: none;
+        cursor: pointer;
+        white-space: nowrap;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .btn-gradient-secondary::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.3);
+        transform: translate(-50%, -50%);
+        transition: width 0.6s, height 0.6s;
+        z-index: -1;
     }
 
     .btn-gradient-secondary:hover {
+        transform: translateY(-2px);
         box-shadow: 0 10px 25px rgba(20, 184, 166, 0.4);
+    }
+
+    .btn-gradient-secondary:hover::before {
+        width: 300px;
+        height: 300px;
     }
 
     /* Skill Tags */
@@ -162,8 +299,29 @@
         border-radius: 20px;
         font-weight: 600;
         transition: all 0.3s ease;
-        display: inline-block;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
         margin: 4px;
+        font-size: 0.95rem;
+    }
+
+    .skill-tag i {
+        font-size: 1.1rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .skill-icon-simple {
+        transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        cursor: pointer;
+        filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1));
+    }
+
+    .skill-icon-simple:hover {
+        transform: translateY(-8px) scale(1.15);
+        filter: drop-shadow(0 8px 20px rgba(99, 102, 241, 0.3));
     }
 
     .skill-tag:hover {
@@ -194,6 +352,19 @@
 
     .dark-mode .text-gray-600 {
         color: #94a3b8;
+    }
+
+    .dark-mode header {
+        background: linear-gradient(
+            135deg,
+            #4f46e5 0%,
+            #7c3aed 25%,
+            #be185d 50%,
+            #0d9488 75%,
+            #4f46e5 100%
+        );
+        background-size: 300% 300%;
+        animation: gradientShift 15s ease infinite;
     }
 
     /* Scrollbar personalizada */

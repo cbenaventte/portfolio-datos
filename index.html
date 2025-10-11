@@ -11,32 +11,33 @@
     
     <title>Portafolio | Ingeniero de Datos - Carlos Benavente</title>
     
-    <script src="https://cdn.tailwindcss.com"></script>
+   <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/simple-icons-font@latest/font/simple-icons.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body class="bg-gray-100 font-sans text-gray-800 transition-colors duration-300">
+<body class="bg-gray-50 font-sans text-gray-800 transition-colors duration-300">
     <!-- Dark Mode Toggle -->
-    <button id="theme-toggle" class="fixed top-4 right-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 z-50 transition-all duration-300 shadow-lg" aria-label="Cambiar a modo oscuro">
+    <button id="theme-toggle" class="fixed top-4 right-4 bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-4 py-2 rounded-lg hover:shadow-lg z-50 transition-all duration-300 shadow-lg" aria-label="Cambiar a modo oscuro">
         <i class="fas fa-moon"></i>
     </button>
 
-   <!-- Header con Gradiente Animado -->
+  <!-- Header con Gradiente Animado -->
 <header class="text-white py-16 text-center relative overflow-hidden">
     <div class="max-w-5xl mx-auto px-4 relative z-10">
-        <h1 class="text-6xl font-bold mb-2">Carlos Benavente</h1>
-        <p class="text-2xl text-indigo-100 mb-8">Ingeniero de Datos | Especialista en Pipelines, Streaming y Análisis Geoespacial</p>
+        <h1 class="text-6xl font-bold mb-2 text-white drop-shadow-lg">Carlos Benavente</h1>
+        <p class="text-2xl text-indigo-50 mb-8 drop-shadow-md">Ingeniero de Datos | Especialista en Pipelines, Streaming y Análisis Geoespacial</p>
         <div class="flex flex-wrap justify-center gap-8">
-            <a href="https://github.com/cbenaventte" target="_blank" aria-label="GitHub de Carlos Benavente" class="text-indigo-100 hover:text-white transition-all duration-200 transform hover:scale-110">
+            <a href="https://github.com/cbenaventte" target="_blank" aria-label="GitHub de Carlos Benavente" class="text-indigo-100 hover:text-white transition-all duration-200 transform hover:scale-110 drop-shadow-md">
                 <i class="fab fa-github text-3xl"></i>
             </a>
-            <a href="https://www.linkedin.com/in/carlos-benavente" target="_blank" aria-label="LinkedIn de Carlos Benavente" class="text-indigo-100 hover:text-white transition-all duration-200 transform hover:scale-110">
+            <a href="https://www.linkedin.com/in/cbenaventte" target="_blank" aria-label="LinkedIn de Carlos Benavente" class="text-indigo-100 hover:text-white transition-all duration-200 transform hover:scale-110 drop-shadow-md">
                 <i class="fab fa-linkedin text-3xl"></i>
             </a>
-            <a href="mailto:carlos.benavente@example.com" aria-label="Enviar email a Carlos Benavente" class="text-indigo-100 hover:text-white transition-all duration-200 transform hover:scale-110">
+            <a href="mailto:cbenaventte@gmail.com.com" aria-label="Enviar email a Carlos Benavente" class="text-indigo-100 hover:text-white transition-all duration-200 transform hover:scale-110 drop-shadow-md">
                 <i class="fas fa-envelope text-3xl"></i>
             </a>
         </div>
@@ -45,77 +46,37 @@
 
 <!-- Sobre Mí -->
 <section class="max-w-5xl mx-auto py-16 px-4">
-    <h2 class="text-4xl font-bold mb-6 text-indigo-900 dark:text-indigo-200">Sobre Mí</h2>
-    <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
+    <h2 class="text-4xl font-bold mb-6 text-indigo-950 dark:text-indigo-200">Sobre Mí</h2>
+    <p class="text-lg text-gray-800 dark:text-gray-300 leading-relaxed mb-8">
         Soy un ingeniero de datos apasionado por transformar datos crudos en soluciones accionables. Con experiencia en Python, SQL, Apache Spark, Kafka y herramientas cloud como AWS y GCP, construyo pipelines escalables y visualizaciones impactantes. Mis proyectos abarcan streaming, ETL y análisis geoespacial, con un enfoque en industrias como turismo, finanzas y acústica.
     </p>
     
     <!-- Habilidades -->
     <div class="mt-12">
-        <h3 class="text-3xl font-bold mb-6 text-indigo-900 dark:text-indigo-200">Habilidades</h3>
-        <div class="flex flex-wrap gap-3">
-            <span class="skill-tag">
-                <i class="fab fa-python"></i> Python
-            </span>
-            <span class="skill-tag">
-                <i class="fas fa-database"></i> SQL
-            </span>
-            <span class="skill-tag">
-                Apache Spark
-            </span>
-            <span class="skill-tag">
-                Apache Airflow
-            </span>
-            <span class="skill-tag">
-                Kafka
-            </span>
-            <span class="skill-tag">
-                <i class="fab fa-aws"></i> AWS
-            </span>
-            <span class="skill-tag">
-                Tableau
-            </span>
-            <span class="skill-tag">
-                Geopandas
-            </span>
-            <span class="skill-tag">
-                PostgreSQL
-            </span>
-            <span class="skill-tag">
-                Google Cloud
-            </span>
-        </div>
-    </div>
-</section>
-
-<!-- Stats Section -->
-<section class="stats-section text-white py-16">
-    <div class="max-w-5xl mx-auto px-4">
-        <h2 class="text-4xl font-bold text-center mb-12">Mi Impacto</h2>
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-            <div class="stat-box">
-                <div class="stat-number counter" data-target="50">0</div>
-                <p class="stat-label">M+ Registros Procesados</p>
-            </div>
-            <div class="stat-box">
-                <div class="stat-number counter" data-target="15">0</div>
-                <p class="stat-label">Proyectos Completados</p>
-            </div>
-            <div class="stat-box">
-                <div class="stat-number counter" data-target="99">0</div>
-                <p class="stat-label">% Precisión</p>
-            </div>
-            <div class="stat-box">
-                <div class="stat-number counter" data-target="5">0</div>
-                <p class="stat-label">Años de Experiencia</p>
-            </div>
+        <h3 class="text-3xl font-bold mb-8 text-indigo-950 dark:text-indigo-200">Habilidades</h3>
+        <div class="flex flex-wrap justify-center gap-6">
+            <img src="https://skillicons.dev/icons?i=python" alt="Python" title="Python" width="48" height="48" class="skill-icon-simple"/>
+            <img src="https://skillicons.dev/icons?i=kafka" alt="Kafka" title="Kafka" width="48" height="48" class="skill-icon-simple"/>
+            <img src="https://skillicons.dev/icons?i=postgresql" alt="PostgreSQL" title="PostgreSQL" width="48" height="48" class="skill-icon-simple"/>
+            <img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB" title="MongoDB" width="48" height="48" class="skill-icon-simple"/>
+            <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL" title="MySQL" width="48" height="48" class="skill-icon-simple"/>
+            <img src="https://skillicons.dev/icons?i=aws" alt="AWS" title="AWS" width="48" height="48" class="skill-icon-simple"/>
+            <img src="https://skillicons.dev/icons?i=gcp" alt="Google Cloud" title="Google Cloud" width="48" height="48" class="skill-icon-simple"/>
+            <img src="https://skillicons.dev/icons?i=docker" alt="Docker" title="Docker" width="48" height="48" class="skill-icon-simple"/>
+            <img src="https://skillicons.dev/icons?i=github" alt="GitHub" title="GitHub" width="48" height="48" class="skill-icon-simple"/>
+            <img src="https://skillicons.dev/icons?i=git" alt="Git" title="Git" width="48" height="48" class="skill-icon-simple"/>
+            <i class="si si-jupyter" style="font-size: 48px; color: #F37726; cursor: pointer; filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1)); transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);" title="Jupyter" onmouseover="this.style.transform='translateY(-8px) scale(1.15)'; this.style.filter='drop-shadow(0 8px 20px rgba(243, 119, 38, 0.3))'" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.filter='drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1))'"></i>
+            <i class="si si-apachespark" style="font-size: 48px; color: #E25A1C; cursor: pointer; filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1)); transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);" title="Apache Spark" onmouseover="this.style.transform='translateY(-8px) scale(1.15)'; this.style.filter='drop-shadow(0 8px 20px rgba(226, 90, 28, 0.3))'" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.filter='drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1))'"></i>
+            <i class="si si-apachecassandra" style="font-size: 48px; color: #1287B1; cursor: pointer; filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1)); transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);" title="Apache Cassandra" onmouseover="this.style.transform='translateY(-8px) scale(1.15)'; this.style.filter='drop-shadow(0 8px 20px rgba(18, 135, 177, 0.3))'" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.filter='drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1))'"></i>
+            <i class="si si-apachenifi" style="font-size: 48px; color: #0066CC; cursor: pointer; filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1)); transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);" title="Apache NiFi" onmouseover="this.style.transform='translateY(-8px) scale(1.15)'; this.style.filter='drop-shadow(0 8px 20px rgba(0, 102, 204, 0.3))'" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.filter='drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1))'"></i>
+            <i class="si si-tableau" style="font-size: 48px; color: #E97627; cursor: pointer; filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1)); transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);" title="Tableau" onmouseover="this.style.transform='translateY(-8px) scale(1.15)'; this.style.filter='drop-shadow(0 8px 20px rgba(233, 118, 39, 0.3))'" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.filter='drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1))'"></i>
         </div>
     </div>
 </section>
 
 <!-- Proyectos -->
 <section class="max-w-5xl mx-auto py-16 px-4">
-    <h2 class="text-4xl font-bold mb-12 text-indigo-900 dark:text-indigo-200">Proyectos</h2>
+    <h2 class="text-4xl font-bold mb-12 text-indigo-950 dark:text-indigo-200">Proyectos</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <!-- Proyecto 1: Monitoreo de Ruido -->
         <article class="glass-card p-8 project-card border-l-4 border-indigo-500">
@@ -198,7 +159,7 @@
             </div>
         </article>
 
-        <!-- Proyecto 4: Airbnb Santiago -->
+                <!-- Proyecto 4: Airbnb Santiago -->
         <article class="glass-card p-8 project-card border-l-4 border-teal-500">
             <div class="flex items-start gap-4 mb-4">
                 <div class="w-12 h-12 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-lg flex items-center justify-center text-white flex-shrink-0">
@@ -207,10 +168,10 @@
                 <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Análisis Geoespacial de Airbnb</h3>
             </div>
             <p class="text-gray-700 dark:text-gray-300 mb-4">
-                Pipeline ETL para analizar listados de Airbnb en Santiago, con mapas de calor por comuna y predicciones de precios. Incluye dashboards interactivos.
+                Pipeline ETL para analizar listados de Airbnb en Santiago, con mapas de calor por comuna y predicciones de precios. Incluye dashboards interactivos en Looker Studio.
             </p>
             <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 font-mono">
-                <span class="text-indigo-600 dark:text-indigo-300">→</span> Python, Pandas, Geopandas, Folium, Airflow, PostGIS
+                <span class="text-indigo-600 dark:text-indigo-300">→</span> Python, Pandas, Geopandas, Folium, Airflow, PostGIS, Looker Studio
             </p>
             <button onclick="toggleDetails('airbnb-details')" class="text-indigo-600 dark:text-indigo-400 underline hover:text-purple-600 dark:hover:text-purple-400 transition-colors mb-4">
                 Ver Detalles
@@ -219,14 +180,19 @@
                 <p><strong>🎯 Logro:</strong> Generó mapas con 95% de cobertura de comunas y predijo precios con R² de 0.85.</p>
             </div>
             <div class="mt-6 flex flex-wrap gap-3">
-                <a href="https://github.com/cbenaventte/airbnb-santiago-analysis" target="_blank" aria-label="Ver repositorio de Análisis Airbnb" class="btn-gradient-secondary">
+                <button type="button" class="btn-gradient-secondary" id="viewDashboardBtn">
+                    <i class="fas fa-chart-bar"></i> Ver Dashboard
+                </button>
+                <a href="https://github.com/cbenaventte/airbnb-santiago-analysis" target="_blank" aria-label="Ver repositorio de Análisis Airbnb" class="btn-gradient-alt">
                     <i class="fab fa-github"></i> Repositorio
                 </a>
-                <a href="https://colab.research.google.com/drive/1MN8DqUCDqYqSDRH_dS8p73f_cyQXreT-?usp=sharing" target="_blank" aria-label="Ver notebook de Google Colab" class="btn-gradient-alt">
+                <a href="https://colab.research.google.com/drive/1MN8DqUCDqYqSDRH_dS8p73f_cyQXreT-?usp=sharing" target="_blank" aria-label="Ver notebook de Google Colab" class="btn-gradient">
                     <i class="fas fa-book"></i> Notebook
                 </a>
             </div>
         </article>
+    </div>
+</section>
     </div>
 </section>
 
@@ -239,6 +205,27 @@
         </a>
     </p>
 </footer>
+
+<!-- Modal para Dashboard Looker Studio -->
+<div id="dashboardModal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4" onclick="if(event.target.id === 'dashboardModal') closeDashboardModal()">
+    <div class="bg-white dark:bg-gray-800 rounded-lg shadow-2xl max-w-6xl w-full max-h-[90vh] overflow-hidden flex flex-col">
+        <div class="flex justify-between items-center p-4 border-b dark:border-gray-700 bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-indigo-900/30 dark:to-purple-900/30">
+            <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Dashboard Interactivo - Airbnb Santiago</h3>
+            <button onclick="closeDashboardModal()" class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
+                <i class="fas fa-times text-2xl"></i>
+            </button>
+        </div>
+        <div class="flex-1 overflow-auto bg-gray-50 dark:bg-gray-900">
+            <iframe 
+              id="dashboardFrame"
+              width="100%" 
+              height="100%" 
+              style="min-height: 600px; border: none;" 
+              allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</div>
 
     <!-- Scripts -->
     <script src="assets/js/script.js"></script>
