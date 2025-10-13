@@ -18,9 +18,43 @@ Portafolio profesional de **Carlos Benavente**, Ingeniero de Datos especializado
 - Tailwind CSS
 - JavaScript Vanilla
 - Font Awesome
+- SimpleIcons
 
 **Herramientas:**
 - Visual Studio Code
 - Git/GitHub
+- Looker Studio
 
 ## 📂 Estructura del Proyecto
+
+```
+portfolio-datos/
+├── index.html
+├── README.md
+├── LICENSE
+├── .gitignore
+└── assets/
+    ├── css/
+    │   └── style.css
+    └── js/
+        └── script.js
+```
+
+
+## 🌐 Sitio en Vivo
+
+[https://cbenaventte.github.io/portfolio-datos](https://cbenaventte.github.io/portfolio-datos)
+
+## 🔗 Enlaces
+
+- 🐙 **GitHub:** [@cbenaventte](https://github.com/cbenaventte)
+- 💼 **LinkedIn:** [cbenaventte](https://www.linkedin.com/in/cbenaventte/)
+- 📧 **Email:** cbenaventte@gmail.com
+
+## 📝 Licencia
+
+MIT License - Ver [LICENSE](LICENSE) para más detalles.
+
+---
+
+Hecho con ❤️ por [Carlos Benavente](https://github.com/cbenaventte)
