@@ -48,7 +48,13 @@
 <section class="max-w-5xl mx-auto py-16 px-4">
     <h2 class="text-4xl font-bold mb-6 text-indigo-950 dark:text-indigo-200">Sobre Mí</h2>
     <p class="text-lg text-gray-800 dark:text-gray-300 leading-relaxed mb-8">
-        Soy un ingeniero de datos apasionado por transformar datos crudos en soluciones accionables. Con experiencia en Python, SQL, Apache Spark, Kafka y herramientas cloud como AWS y GCP, construyo pipelines escalables y visualizaciones impactantes. Mis proyectos abarcan streaming, ETL y análisis geoespacial, con un enfoque en industrias como turismo, finanzas y acústica.
+         Soy Ingeniero de Datos con una mirada multidisciplinaria: combino ingeniería, análisis geoespacial y acústica para transformar datos complejos en información que suena bien y genera impacto real. 
+        <br><br>
+        Tengo experiencia en el desarrollo de pipelines de datos escalables, procesamiento en tiempo real (Kafka, Spark Streaming) y orquestación en la nube (AWS, GCP). Me apasiona la limpieza, estructura y narrativa detrás de los datos: desde el ETL hasta la visualización final.
+        <br><br>
+        Como Ingeniero de Datos, diseño sistemas que capturan, procesan y transforman información en conocimiento útil.  
+        He aplicado la ciencia de datos en contextos donde la información no solo se analiza, sino que se escucha.  
+        Mi enfoque combina ingeniería, análisis espacial y creatividad para construir soluciones que interpretan la realidad con precisión y propósito.
     </p>
     
     <!-- Habilidades -->
@@ -168,21 +174,21 @@
                 <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Análisis Geoespacial de Airbnb</h3>
             </div>
             <p class="text-gray-700 dark:text-gray-300 mb-4">
-                Pipeline ETL para analizar listados de Airbnb en Santiago, con mapas de calor por comuna y predicciones de precios. Incluye dashboards interactivos en Looker Studio.
+                Pipeline ETL para analizar 12,282 listados de Airbnb en Santiago, Chile (27/12/2024), enfocándose en 22 barrios con al menos 20 listings. Examina precios, ocupación, rentabilidad y ratings. Incluye mapas de calor interactivos y dashboards en Looker Studio.
             </p>
             <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 font-mono">
-                <span class="text-indigo-600 dark:text-indigo-300">→</span> Python, Pandas, Geopandas, Folium, Airflow, PostGIS, Looker Studio
+                <span class="text-indigo-600 dark:text-indigo-300">→</span> Python, Pandas, Geopandas, Folium, PostGIS, Looker Studio
             </p>
             <button onclick="toggleDetails('airbnb-details')" class="text-indigo-600 dark:text-indigo-400 underline hover:text-purple-600 dark:hover:text-purple-400 transition-colors mb-4">
                 Ver Detalles
             </button>
             <div id="airbnb-details" class="hidden mt-4 p-4 bg-indigo-50 dark:bg-indigo-900/20 rounded-lg text-sm text-gray-700 dark:text-gray-300 border-l-2 border-indigo-500">
-                <p><strong>🎯 Logro:</strong> Generó mapas con 95% de cobertura de comunas y predijo precios con R² de 0.85.</p>
+                <p><strong>🎯 Logro:</strong> Desarrollo de un pipeline ETL que analizó 12,282 listados de Airbnb en Santiago, generando mapas interactivos con 95% de cobertura de 22 comunas y optimizando la calidad de los datos mediante imputación de ratings por barrio, identificando oportunidades de inversión en barrios como Las Condes (~$7.91M CLP/año) y La Cisterna (~57% ocupación).</p>
             </div>
             <div class="mt-6 flex flex-wrap gap-3">
-                <button type="button" class="btn-gradient-secondary" id="viewDashboardBtn">
+                <a href="https://lookerstudio.google.com/reporting/25e7eab8-b522-472b-bbc0-316e41196388/page/0" target="_blank" class="btn-gradient-secondary">
                     <i class="fas fa-chart-bar"></i> Ver Dashboard
-                </button>
+                </a>
                 <a href="https://github.com/cbenaventte/airbnb-santiago-analysis" target="_blank" aria-label="Ver repositorio de Análisis Airbnb" class="btn-gradient-alt">
                     <i class="fab fa-github"></i> Repositorio
                 </a>
