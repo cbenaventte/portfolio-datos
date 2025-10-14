@@ -57,4 +57,4 @@ MIT License - Ver [LICENSE](LICENSE) para más detalles.
 
 ---
 
-Hecho con ❤️ por [Carlos Benavente](https://github.com/cbenaventte)
+Hecho por [Carlos Benavente](https://github.com/cbenaventte)
